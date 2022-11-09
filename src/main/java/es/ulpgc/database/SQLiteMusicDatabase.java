@@ -9,7 +9,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class SQLiteMusicDatabase {
+public class SQLiteMusicDatabase implements MusicDatabase{
     private Connection conn;
     public Statement init() throws SQLException {
         String dbPath = "C:/Users/cynth/IdeaProjects/Api_spotify/src/main/java/es/ulpgc/database/table.db";
